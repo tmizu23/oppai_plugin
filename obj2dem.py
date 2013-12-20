@@ -102,7 +102,7 @@ def translate(filename,res,r,detail,flag):
 
     ## extract front side points. diff from max and min
     # calc minimum elevation for nodata setting
-    gdal.AllRegister()
+    #gdal.AllRegister() error???
     
     rds = gdal.Open(maxtiffile)
     datamax = rds.GetRasterBand(1).ReadAsArray()
